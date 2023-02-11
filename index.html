@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devices</title>
+<style>
+
+ * {
+  box-sizing: border-box;
+}
+h1{
+  margin-bottom: 13px;
+}
+
+p{
+  border: 1px solid rgb(245, 9, 9);
+  background-color: #0c490b;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: rgb(99, 188, 218);
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 50%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-l-1, .col-l-2, .col-l-3 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-l-1 {
+    width: 25%;
+  }
+  .col-l-2 {
+    width: 50%;
+  }
+  .col-l-3 {
+    width: 50%;
+  }
+  
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col1, .col2, .col3{
+    float: left;
+    border: 1px solid green;
+  }
+  .col1 {
+    width: 1000%;
+  }
+  .col2 {
+    width: 100%;
+  }
+  .col3 {
+    width: 100%;
+  }
+  
+}
+
+</style>
+</head>
+<body>
+<h1>Responsive Layout</h1>
+
+<div class="row">
+  <div class="col-l-1 col3"><p>
+    Cellphones:
+    The history of mobile phones.   
+  </p></div>
+  <div class="col-l-1 col3"><p>Laptops:
+    Add a wireless mouse to your laptop. An external mouse can make it easier to work on your laptop </p></div>
+  <div class="col-l-1 col3"><p>AI: 
+    ChatGPT: Optimizing
+    Language Models for Dialogue
+    We’ve trained a model called ChatGPT which interacts in a conversational way.
+ </p></div>
+</div>
+
+</body>
+</html>
